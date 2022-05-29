@@ -3,14 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { TechnoAddComponent } from './techno-add/techno-add.component';
+import { FormsModule } from '@angular/forms';
+import { TechnoListComponent } from './techno-list/techno-list.component';
+import { TechnoDetailsComponent } from './techno-details/techno-details.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    TechnoAddComponent,
+    TechnoListComponent,
+    TechnoDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

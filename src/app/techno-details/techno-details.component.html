@@ -1,0 +1,7 @@
+<div class="card w-50 my-3 p-3 mx-auto">
+    <span class="col-auto badge bg-secondary rounded">{{tech.id}}</span>
+    <h4>Détails de la techno {{tech.technoname}}</h4>
+    <div>{{tech.details}}</div>
+    <div><span class="col-auto badge bg-primary rounded-pill">{{tech.category}}</span></div>
+    <button (click)="removeTechno(tech)" class="btn btn-danger">Suppr</button>
+</div>

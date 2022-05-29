@@ -1,0 +1,26 @@
+<h1 class="text-center mb-4 text-primary">Ajouter des technos</h1>
+
+<form #f="ngForm" (submit)="addTechno(f)" class="row g-3 needs-validation">
+  <div class="mx-auto col-6">
+    <label for="technoname" class="form-label">Nom de la techno</label>
+    <input placeholder="Nom de la techno" ngModel name="technoname" type="text" class="form-control" id="technoname" required>
+    <label for="category" class="form-label">Nom de la techno</label>
+    <select ngModel name="category" class="form-select" id="category" required aria-label="Default select example">
+        <option value="" selected > - Choix de la catégorie de la techno - </option>
+        <option value="front">Frontend</option>
+        <option value="back">Backend</option>
+        <option value="fullstack">Fullstack</option>
+    </select>
+    <div class="row gx-0">
+
+        <label for="details" class="form-label">Détails</label>
+        <textarea class="p-2" ngModel name="details" id="details" cols="30" rows="10"></textarea>
+    </div>
+    <div class="row mt-2">
+  
+      <div class="col-12 d-flex justify-content-end">
+          <button class="btn btn-primary ms-auto" type="submit">Submit form</button>
+      </div>
+    </div>
+  </div>
+</form>

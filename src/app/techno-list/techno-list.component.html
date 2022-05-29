@@ -1,0 +1,7 @@
+<h1 class="text-center">Toutes les technos</h1>
+
+<div class="" *ngFor="let techno of allTechnos">
+    <app-techno-details [tech]="techno" (deleteTech)="deleteTechno($event)"></app-techno-details>
+</div>
+
+<!-- {{allTechnos | json}} -->
